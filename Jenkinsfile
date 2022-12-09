@@ -7,7 +7,7 @@ pipeline {
             steps {
                echo 'this is the build stage'
                 node('Node19.2') { //node(naamVanDePlugin)
-                    sh 'npm install'
+                    sh 'npm install -y'
                 }
             }
         }
