@@ -6,7 +6,9 @@ pipeline {
         stage('Build') {
             steps {
                echo 'this is the build stage'
-               //vb: sh 'npm install package'
+                node('Node19.2') { //node(naamVanDePlugin)
+                    sh 'npm install'
+                }
             }
         }
         stage('Test') {
