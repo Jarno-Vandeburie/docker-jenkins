@@ -1,6 +1,8 @@
 pipeline {
     
-    agent any
+    agent{
+        label 'Node19.2'
+    }
     
     stages {
         stage('Build') {
