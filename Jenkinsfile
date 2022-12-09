@@ -5,8 +5,8 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-               echo 'this is the build stage'
-                node('Node19_2'){
+                echo 'this is the build stage'
+                node('Node19.2'){
                     sh 'npm init -y' 
                 }
                 
@@ -14,12 +14,12 @@ pipeline {
         }
         stage('Test') {
             steps {
-               echo 'this is the test stage'
+                echo 'this is the test stage'
             }
         }
         stage('Deploy') {
             steps {
-               echo 'this is the deploy stage'
+                echo 'this is the deploy stage'
             }
         }
     }
